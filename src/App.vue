@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Header :cart="cart" :currency="currency"></Header>
-    <List :currency="currency"/>
-    <Cart :cart="cart"/>
+    <Header />
+    <List />
+    <Cart />
   </div>
 </template>
 
@@ -13,12 +13,6 @@ import Cart from './components/Cart.vue';
 
 export default {
   name: 'App',
-  data() {
-    return {
-      cart: [],
-      currency: 'VGTB',
-    };
-  },
   components: {
     Header,
     List,
@@ -35,10 +29,6 @@ export default {
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
   color: #2c3e50;
 }
 </style>
